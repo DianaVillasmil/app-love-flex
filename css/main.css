@@ -4,11 +4,27 @@ body {
   line-height: 1.71429;
   background-color: #fff;
   /* Enlaza la tipografia Open Sans */
-  ont-family: 'Yanone Kaffeesatz', sans-serif;
+   font-family: 'Quicksand', sans-serif
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .flex-container {
 	display: flex;
+}
+
+.flex-container > div {
+	padding: 10px;
+}
+
+#work .flex-container {
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .menu {
@@ -39,7 +55,6 @@ body {
 	background-image: url(../assets/images/bg-home.jpg);
 	background-position: center;
 	background-size: cover;
-	background-attachment: fixed;
 	background-repeat: no-repeat;
 	justify-content: center;
 	align-items: center;
@@ -57,9 +72,29 @@ body {
 	color: #fff;
 	padding: 70px;
 }
+
+.btn-home {
+  background: #2Ecc71;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 63px;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
 #services.flex-container {
 	justify-content: space-around;
 	flex-wrap: wrap;
+}
+
+#gallery {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
 }
 
 .box-services {
